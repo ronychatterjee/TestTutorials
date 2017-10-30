@@ -1,0 +1,91 @@
+# Site settings
+# Access it in the templates via {{ site.myvariable }}.
+title: Get Started with SQL Server Machine Learning Services
+description: >
+ Get Started with SQL Server Machine Learning Services
+url: "https://microsoft.github.io/sql-ml-tutorials/"
+
+disqus:
+  shortname: sqlchoice
+
+gitter: https://gitter.im/Microsoft/mssql-developers
+
+steps:
+  1: Set up your environment
+  2: Create your ML script using $$
+  3: Deploy your ML script with SQL Server
+
+menu:
+  R:
+    logo: r-logo.png
+    pages:
+      Predict ski rentals: R/rentalprediction
+      Perform customer clustering: R/customerclustering
+
+  Python:
+    logo: python.png
+    pages:
+      Predict ski rentals: python/rentalprediction
+      Perform customer clustering*: python/customerclustering
+      
+  
+resources:
+ sqlserver-R:
+  pre: Check out what's new with
+  text: SQL Server + R on Channel 9
+  link: https://channel9.msdn.com/Events/Connect/2016/151
+  condition: R
+ sqlserver-csharp:
+  pre: Check out what's new with
+  text: SQL Server + C# on Channel 9
+  link: https://channel9.msdn.com/Events/Connect/2016/151
+  condition: C#
+ sqlserver-java:
+  pre: Check out what's new with
+  text: SQL Server + Java on Channel 9
+  link: https://channel9.msdn.com/Events/Connect/2016/152
+  condition: Java
+ sqlserver-node:
+  pre: Check out what's new with
+  text: SQL Server + Node.js on Channel 9
+  link: https://channel9.msdn.com/Events/Connect/2016/160
+  condition: Node.js
+ sqlserver-php:
+  pre: Check out what's new with
+  text: SQL Server + PHP on Channel 9
+  link: https://channel9.msdn.com/Events/Connect/2016/182
+  condition: PHP
+ sqlserver-py:
+  pre: Check out what's new with
+  text: SQL Server + Python on Channel 9
+  link: https://channel9.msdn.com/Events/Connect/2016/189
+  condition: Python
+ github:
+  pre: Browse more SQL Server code samples on our
+  text: GitHub repository
+  link: https://github.com/Microsoft/sql-server-samples/tree/master/samples/features
+ sql17:
+  pre: Learn more about
+  text: SQL Server 2017
+  link: https://www.microsoft.com/en-us/sql-server/sql-server-2017
+ sourcecodepy:
+  pre: Get the sample code for this tutorial
+  text: here
+  link: https://github.com/Microsoft/sql-server-samples/tree/master/samples/features/machine-learning-services/python/getting-started/rental-prediction
+  condition: Python
+ sourcecodeR:
+  pre: Get the sample code for this tutorial
+  text: here
+  link: https://github.com/Microsoft/sql-server-samples/tree/master/samples/features/r-services/getting-started
+  condition: R
+  
+# Build settings
+markdown: kramdown
+theme: minima # we are extending it
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+gems:
+  - jekyll-redirect-from
