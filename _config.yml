@@ -27,6 +27,12 @@ menu:
     pages:
       Predict ski rentals: python/rentalprediction
       Perform customer clustering*: python/customerclustering
+
+  Power BI:
+    logo: award.png
+    pages:
+      Predict ski rentals: PowerBI/rentalprediction
+      Perform customer clustering*: PowerBI/customerclustering
       
   
 resources:
